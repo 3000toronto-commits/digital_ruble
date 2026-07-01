@@ -1,5 +1,20 @@
-<section class="cdr-slider" aria-label="Еще восемь вопросов и ответов о цифровом рубле">
+<html lang="ru"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Группы контрагентов</title>
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/green-color.css">
+    <link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body><section class="cdr-slider" aria-label="Еще восемь вопросов и ответов о цифровом рубле" tabindex="0">
   <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+	}
     .cdr-slider {
       --cdr-main: #367879;
       --cdr-light: #E0F2F3;
@@ -7,7 +22,7 @@
 
       width: 750px;
       max-width: 100%;
-      height: 390px;
+      <!--height: 390px;-->
       margin: 0 auto;
       padding: 24px 34px;
       background: var(--cdr-light);
@@ -16,7 +31,7 @@
       box-shadow: 0 14px 34px rgba(54, 120, 121, 0.16);
       font-family: Arial, Helvetica, sans-serif;
       color: var(--cdr-text);
-
+	  margin:0 auto;
       display: flex;
       flex-direction: column;
     }
@@ -96,7 +111,7 @@
     }
 
     .cdr-slider__button {
-      width: 124px;
+      min-width: 124px;
       padding: 12px 18px;
       border: 0;
       border-radius: 999px;
@@ -124,7 +139,28 @@
       outline-offset: 3px;
     }
 
-    @media (max-width: 400px) {
+    
+
+    @media (max-width: 480px) {
+      .cdr-slider {
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+      .cdr-slider__title {
+        font-size: 22px;
+      }
+
+      .cdr-slider__question {
+        font-size: 17px;
+        border-radius: 16px;
+      }
+
+      .cdr-slider__answer {
+        font-size: 15px;
+      }
+    }
+	@media (max-width: 400px) {
       .cdr-slider {
         width: 100%;
         height: auto;
@@ -149,77 +185,57 @@
         min-width: 0;
       }
     }
-
-    @media (max-width: 480px) {
-      .cdr-slider {
-        padding: 20px;
-        border-radius: 20px;
-      }
-
-      .cdr-slider__title {
-        font-size: 22px;
-      }
-
-      .cdr-slider__question {
-        font-size: 17px;
-        border-radius: 16px;
-      }
-
-      .cdr-slider__answer {
-        font-size: 15px;
-      }
-    }
   </style>
 
-  <p class="cdr-slider__count">ВОПРОС 1 ИЗ 8</p>
-  <h2 class="cdr-slider__title">Еще восемь вопросов и ответов о цифровом рубле</h2>
+  <p class="cdr-slider__count">ВОПРОС 8 ИЗ 8</p>
+  <h2 class="cdr-slider__title">Еще восемь вопросов и&nbsp;ответов о&nbsp;цифровом рубле</h2>
 
   <div class="cdr-slider__viewport">
-    <article class="cdr-slider__card is-active" aria-hidden="false" data-count="ВОПРОС 1 ИЗ 8">
-      <h3 class="cdr-slider__question">Как принимать цифровые рубли на территории без интернета?</h3>
-      <p class="cdr-slider__answer">Магазины, работающие на территории, где нет интернета, могут не принимать цифровые рубли.</p>
+    <article class="cdr-slider__card" aria-hidden="true" data-count="ВОПРОС 1 ИЗ 8">
+      <h3 class="cdr-slider__question">Как принимать цифровые рубли на&nbsp;территории без интернета?</h3>
+      <p class="cdr-slider__answer">Магазины, работающие на&nbsp;территории, где нет интернета, могут не&nbsp;принимать цифровые рубли.</p>
     </article>
 
     <article class="cdr-slider__card" aria-hidden="true" data-count="ВОПРОС 2 ИЗ 8">
       <h3 class="cdr-slider__question">Что делать, если торговые точки компании имеют разные характеристики?</h3>
-      <p class="cdr-slider__answer">Для компаний с несколькими точками обязанность принимать цифровые рубли определяют по каждой из них отдельно. Например, если сеть за год заработала больше 120 млн руб., но часть ее магазинов находятся в местах без интернета или имеют выручку меньше 5 млн руб. в год, то такие точки можно не подключать к оплате цифровыми рублями. В остальных точках обязанность сохраняется.</p>
+      <p class="cdr-slider__answer">Для компаний с&nbsp;несколькими точками обязанность принимать цифровые рубли определяют по&nbsp;каждой из них отдельно. Например, если сеть за&nbsp;год заработала больше 120&nbsp;млн руб., но&nbsp;часть ее магазинов находятся в местах без интернета или имеют выручку меньше 5&nbsp;млн руб. в&nbsp;год, то такие точки можно не&nbsp;подключать к&nbsp;оплате цифровыми рублями. В&nbsp;остальных точках обязанность сохраняется.</p>
     </article>
 
     <article class="cdr-slider__card" aria-hidden="true" data-count="ВОПРОС 3 ИЗ 8">
       <h3 class="cdr-slider__question">Нужно ли закупать новое оборудование?</h3>
-      <p class="cdr-slider__answer">Если компания уже принимает оплату через СБП, новое оборудование не понадобится. Организации смогут принимать цифровые рубли через действующие онлайн-каналы и терминалы: покупатель сканирует QR-код, и деньги поступают на цифровой кошелек продавца.</p>
+      <p class="cdr-slider__answer">Если компания уже принимает оплату через СБП, новое оборудование не&nbsp;понадобится. Организации смогут принимать цифровые рубли через действующие онлайн-каналы и&nbsp;терминалы: покупатель сканирует QR-код, и&nbsp;деньги поступают на&nbsp;цифровой кошелек продавца.</p>
     </article>
 
     <article class="cdr-slider__card" aria-hidden="true" data-count="ВОПРОС 4 ИЗ 8">
-      <h3 class="cdr-slider__question">Какие операции можно проводить с помощью цифрового рубля?</h3>
-      <p class="cdr-slider__answer">Компания может принимать оплату от покупателя, делать возврат, перечислять деньги поставщику, платить налоги и взносы, рассчитываться с персоналом.</p>
+      <h3 class="cdr-slider__question">Какие операции можно проводить с&nbsp;помощью цифрового рубля?</h3>
+      <p class="cdr-slider__answer">Компания может принимать оплату от покупателя, делать возврат, перечислять деньги поставщику, платить налоги и&nbsp;взносы, рассчитываться с&nbsp;персоналом.</p>
     </article>
 
     <article class="cdr-slider__card" aria-hidden="true" data-count="ВОПРОС 5 ИЗ 8">
-      <h3 class="cdr-slider__question">Можно ли снять наличные с цифрового кошелька?</h3>
-      <p class="cdr-slider__answer">Напрямую снять наличные со счета цифрового рубля нельзя. Нужно сначала вывести средства на расчетный счет, а затем обналичить их по стандартным тарифам банка.</p>
+      <h3 class="cdr-slider__question">Можно ли снять наличные с&nbsp;цифрового кошелька?</h3>
+      <p class="cdr-slider__answer">Напрямую снять наличные со&nbsp;счета цифрового рубля нельзя. Нужно сначала вывести средства на&nbsp;расчетный счет, а&nbsp;затем обналичить их по&nbsp;стандартным тарифам банка.</p>
     </article>
 
     <article class="cdr-slider__card" aria-hidden="true" data-count="ВОПРОС 6 ИЗ 8">
-      <h3 class="cdr-slider__question">Можно ли оформлять кредиты или депозиты в цифровых рублях?</h3>
-      <p class="cdr-slider__answer">Использовать цифровой рубль как финансовый продукт нельзя — это платежный инструмент. Получить проценты на остаток, открыть вклад, взять кредит в цифровых рублях тоже не получится.</p>
+      <h3 class="cdr-slider__question">Можно ли оформлять кредиты или депозиты в&nbsp;цифровых рублях?</h3>
+      <p class="cdr-slider__answer">Использовать цифровой рубль как финансовый продукт нельзя — это платежный инструмент. Получить проценты на&nbsp;остаток, открыть вклад, взять кредит в&nbsp;цифровых рублях тоже не&nbsp;получится.</p>
     </article>
 
     <article class="cdr-slider__card" aria-hidden="true" data-count="ВОПРОС 7 ИЗ 8">
       <h3 class="cdr-slider__question">Обязаны ли юрлица рассчитываться цифровым рублем между собой?</h3>
-      <p class="cdr-slider__answer">Если компании продают товары или оказывают услуги только юридическим лицам, подключать оплату цифровыми рублями они не обязаны. Для расчетов цифровым рублем между юрлицами нужно согласие контрагента. Компания не может в одностороннем порядке заставить другую компанию принимать цифровые рубли.</p>
+      <p class="cdr-slider__answer">Если компании продают товары или оказывают услуги только юридическим лицам, подключать оплату цифровыми рублями они не&nbsp;обязаны. Для расчетов цифровым рублем между юрлицами нужно согласие контрагента. Компания не&nbsp;может в&nbsp;одностороннем порядке заставить другую компанию принимать цифровые рубли.</p>
     </article>
 
-    <article class="cdr-slider__card" aria-hidden="true" data-count="ВОПРОС 8 ИЗ 8">
+    <article class="cdr-slider__card is-active" aria-hidden="false" data-count="ВОПРОС 8 ИЗ 8">
       <h3 class="cdr-slider__question">Нужно ли менять старые договоры?</h3>
-      <p class="cdr-slider__answer">Если в договоре написано, что «оплата производится путем безналичного расчета», необходимости менять договор нет: цифровой рубль относится к безналичной валюте.</p>
-      <p class="cdr-slider__answer">Если же в договоре есть формулировка о том, что «оплата производится путем перечисления средств на расчетный счет поставщика», лучше отдельно прописать в допсоглашении возможность рассчитываться цифровым рублем.</p>
+      <p class="cdr-slider__answer">Если в&nbsp;договоре написано, что «оплата производится путем безналичного расчета», необходимости менять договор нет: цифровой рубль относится к&nbsp;безналичной валюте.</p>
+      <p class="cdr-slider__answer">Если же в&nbsp;договоре есть формулировка о&nbsp;том, что «оплата производится путем перечисления средств на расчетный счет поставщика», лучше отдельно прописать в&nbsp;допсоглашении возможность рассчитываться цифровым рублем.</p>
     </article>
   </div>
 
   <div class="cdr-slider__controls">
     <button class="cdr-slider__button cdr-slider__button--prev" type="button" aria-label="Показать предыдущий вопрос">Назад</button>
-    <button class="cdr-slider__button cdr-slider__button--next" type="button" aria-label="Показать следующий вопрос">Вперед</button>
+    <button class="cdr-slider__button cdr-slider__button--next is-hidden" type="button" aria-label="Показать следующий вопрос">Вперед</button>
   </div>
 
   <script>
@@ -267,3 +283,4 @@
     })();
   </script>
 </section>
+</body></html>
